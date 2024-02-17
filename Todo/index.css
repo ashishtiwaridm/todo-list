@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  margin-top: 3%;
+}
+
+#main-heading:hover{
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+
+#main-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#todo-input, #todo-date {
+  font-size: 15px;
+  padding: 15px 25px;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 10%;
+}
+
+.btn-todo {
+  width: 150px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.btn-delete {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-todo:hover, .btn-delete:hover {
+  background-color: navy;
+}
+
+.todo-container {
+  background-color: #fff;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.todo-container:hover {
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
